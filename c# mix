@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        int square(int a)
+        {
+            return a * a;
+
+        }
+        static void Main(string[] args)
+        {
+            float b = 3.13F;
+            double c = b;
+
+            String ac = "Sulemanshah ka beta ertugrul";
+            Console.WriteLine(ac.ToUpper());
+            Console.WriteLine(ac.ToLower());
+            Console.WriteLine(ac.Length);
+            Console.WriteLine(String.Concat(ac, "\npakistan zindabad"));
+            Console.WriteLine(ac.IndexOf("Beta"));
+
+
+            Console.WriteLine("Hindustan zindabad");
+           String a= Console.ReadLine();
+            Console.WriteLine(Convert.ToInt32(a)+Convert.ToInt32(a));
+            Console.WriteLine("Enter your name : ");
+            String name = Console.ReadLine();
+            Console.WriteLine("eneter your age");
+            String age = Console.ReadLine();
+            int age2 = Convert.ToInt32(age);
+
+            Console.WriteLine($"your name is {name} your age is {age}");
+            Program obj = new Program();
+            Console.WriteLine(obj.square(Convert.ToInt32(a)));
+            Console.ReadLine();
+
+        }
+    }
+}
